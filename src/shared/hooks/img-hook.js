@@ -16,7 +16,7 @@ export const useImg = () => {
 		const getImg = () => {
 			try {
 				unsplash.photos
-					.getRandomPhoto({ query: 'places' })
+					.getRandomPhoto({ query: 'travel' })
 					.then(toJson)
 					.then((json) => {
 						const data = json;

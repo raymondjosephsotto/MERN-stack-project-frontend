@@ -10,12 +10,13 @@ const AuthHeader = () => {
 					CREATE AND LOOKBACK ON THE MOST MEMORABLE PLACES.
 				</h1>
 				<p className='auth-content'>
-					We know that you love to travel and <b>Travelog</b> is here to remind
-					you to revisit on those moments. Add the places you would like to go
-					to and log the things you would like to do once you get there. <br />
+					We know that you love to travel and we created a space to remind you
+					and revisit on those moments. Simply add the places you would like to
+					go to and log the things you would like to do once you get there.{' '}
 					<br />
-					At <b>Travelog</b>, memorable places and experiences is something
-					worth talking about.
+					<br />
+					At <b style={{ color: '#ec6b2d' }}>Travelog</b>, memorable places and
+					experiences is something worth talking about.
 				</p>
 			</div>
 		</React.Fragment>

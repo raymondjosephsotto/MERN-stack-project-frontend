@@ -1,37 +1,16 @@
 .text-wrapper {
 	display: none;
-	/* position: relative; */
 }
-/* .text-wrapper > * {
-	position: relative;
-	z-index: 2;
-} */
 
 .auth-heading {
 	font-size: 3rem;
 	color: white;
 	line-height: 2.8rem;
-	/* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-		1px 1px 0 #000; */
 }
 
 .auth-content {
 	color: white;
 	line-height: 22px;
-	/* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-		1px 1px 0 #000; */
-}
-
-.auth-heading::after,
-.auth-content::after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.2);
-	z-index: -1;
 }
 
 @media (min-width: 1200px) {

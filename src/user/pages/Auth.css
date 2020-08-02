@@ -13,19 +13,13 @@ main {
 }
 
 .background-paper {
-	/* background-image: url('../../assets/4.jpg'); */
+	/*background-image is set in <div> inline styles*/
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
 	height: 100vh;
 	overflow: auto;
-	position: relative;
-}
-.background-paper > * {
-	position: relative;
-	z-index: 2;
-	height: 100vh;
 }
 
 .footer-credits {
@@ -38,8 +32,6 @@ main {
 	font-size: smaller;
 	color: white;
 	text-decoration: none;
-	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-		1px 1px 0 #000;
 }
 
 @media (min-width: 1200px) {

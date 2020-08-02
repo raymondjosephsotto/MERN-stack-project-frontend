@@ -109,7 +109,7 @@ const Auth = () => {
 			<div
 				className='background-paper'
 				style={{
-					backgroundImage: `url(${showImage})`,
+					backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2) ), url(${showImage})`,
 				}}>
 				<div className='grid-container'>
 					<Card className='authentication'>
