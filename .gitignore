@@ -25,3 +25,5 @@ yarn-error.log*
 # api keys
 .env  
 .env.production
+# Local Netlify folder
+.netlify
