@@ -68,7 +68,7 @@ const Auth = () => {
 	};
 
 	const authSubmitHandler = async (event) => {
-		console.log(formState.inputs); //DELETE THIS LINE AFTER FIXING BUGS
+		// console.log(formState.inputs); //DELETE THIS LINE AFTER FIXING BUGS
 		event.preventDefault();
 
 		if (isLoginMode) {
