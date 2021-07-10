@@ -68,6 +68,7 @@ const Auth = () => {
 	};
 
 	const authSubmitHandler = async (event) => {
+		console.log(formState.inputs); //DELETE THIS LINE AFTER FIXING BUGS
 		event.preventDefault();
 
 		if (isLoginMode) {
@@ -97,9 +98,14 @@ const Auth = () => {
 					'POST',
 					formData
 				);
-
 				auth.login(responseData.userId, responseData.token);
+
+
+				// console.log(responseData);  // AWS S3 data - DELETE THIS LINE AFTER FIXING BUGS
+
+
 			} catch (err) {}
+			
 		}
 	};
 
