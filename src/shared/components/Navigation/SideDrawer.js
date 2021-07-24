@@ -1,24 +1,51 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { CSSTransition } from 'react-transition-group';
+import React, { useState } from "react";
+import clsx from "clsx";
+import { makeStyles } from "@material-ui/core/styles";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemIcon from "@material-ui/core/ListItemIcon";
+import ListItemText from "@material-ui/core/ListItemText";
+import Divider from "@material-ui/core/Divider";
+import InboxIcon from "@material-ui/icons/Inbox";
+import DraftsIcon from "@material-ui/icons/Drafts";
+import Drawer from "@material-ui/core/Drawer";
 
-import './SideDrawer.css';
+import NavLinks from "../Navigation/NavLinks";
+
+const useStyles = makeStyles((theme) => ({
+  list: {
+    width: "auto",
+    transition: theme.transitions.create("width", {
+      easing: theme.transitions.easing.sharp,
+      duration: theme.transitions.duration.enteringScreen,
+    }),
+  },
+  paper: {
+    width: 250,
+  },
+}));
 
 const SideDrawer = (props) => {
-	const content = (
-		<CSSTransition
-			in={props.show}
-			timeout={200}
-			classNames='slide-in-left'
-			mountOnEnter
-			unmountOnExit>
-			<aside className='side-drawer' onClick={props.onClick}>
-				{props.children}
-			</aside>
-		</CSSTransition>
-	);
+  /* Declare makeStyles(); */
+  const classes = makeStyles();
 
-	return ReactDOM.createPortal(content, document.getElementById('drawer-hook'));
+
+
+  return (
+    <Drawer
+      variant="temporary"
+      anchor="left"
+      open={props.show}
+      onClose={props.onClick}
+      onClick={props.onClick}
+      className={clsx(classes.list)}
+      classes={{
+      	paper: clsx(classes.paper)
+      }}
+    >
+   <NavLinks/>
+    </Drawer>
+  );
 };
 
 export default SideDrawer;

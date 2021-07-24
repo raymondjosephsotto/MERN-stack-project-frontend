@@ -23,6 +23,7 @@
 	height: 100%;
 }
 
+/* Desktop Device - 768px or Higher */
 @media (min-width: 768px) {
 	.menu-icon {
 		display: none;
@@ -32,6 +33,7 @@
 	}
 
 	.main-navigation__header-nav {
-		display: block;
+		display: flex;
+		align-items: center;
 	}
 }

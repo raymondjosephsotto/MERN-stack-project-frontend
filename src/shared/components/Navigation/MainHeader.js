@@ -1,9 +1,16 @@
-import React from 'react';
+import React from "react";
 
-import './MainHeader.css';
+import { makeStyles, AppBar } from "@material-ui/core";
 
-const MainHeader = props => {
-  return <header className="main-header">{props.children}</header>;
+// import './MainHeader.css';
+
+
+const MainHeader = (props) => {
+  return (
+    <AppBar position="static">
+      {props.children}
+    </AppBar>
+  );
 };
 
 export default MainHeader;
