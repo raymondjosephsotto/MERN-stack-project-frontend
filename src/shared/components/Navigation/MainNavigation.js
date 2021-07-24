@@ -31,6 +31,17 @@ const useStyles = makeStyles((theme) => ({
     color: "#fff",
     textDecoration: "none",
   },
+  toggle: {
+    "& .Mui-checked": {
+      color: "#ffef00",
+    },
+    "& .MuiSwitch-track": {
+      backgroundColor: "#fff",
+    },
+    "& .MuiSwitch-colorPrimary.Mui-checked + .MuiSwitch-track": {
+      backgroundColor: "#ffef00 !important",
+    },
+  },
 }));
 
 const MainNavigation = ({ props, onThemeToggle }) => {
@@ -63,7 +74,10 @@ const MainNavigation = ({ props, onThemeToggle }) => {
             <IconButton onClick={openDrawerHandler}>
               <MenuIcon />
             </IconButton>
-            <Switch color="primary" onClick={onThemeToggle} />
+            <Switch
+             color="primary" size="small" className={classes.toggle}
+              onClick={onThemeToggle}
+            />
           </div>
           <Typography variant="h1" className={classes.title}>
             <Link className={classes.titleLink} to="/">

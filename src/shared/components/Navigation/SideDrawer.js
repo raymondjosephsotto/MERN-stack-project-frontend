@@ -6,7 +6,8 @@ import Drawer from "@material-ui/core/Drawer";
 
 import NavLinks from "../Navigation/NavLinks";
 
-const useStyles = makeStyles((theme) => ({
+// eslint-disable-next-line
+const useStyles = makeStyles((theme) => ({ 
   list: {
     width: "auto",
     transition: theme.transitions.create("width", {
@@ -31,7 +32,7 @@ const SideDrawer = (props) => {
       anchor="left"
       open={props.show}
       onClose={props.onClick}
-      onClick={props.onClick}
+      // onClick={props.onClick}
       className={clsx(classes.list)}
       classes={{
       	paper: clsx(classes.paper)

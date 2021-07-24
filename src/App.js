@@ -82,18 +82,6 @@ const App = () => {
     setTheme(!theme);
   };
 
-  /* Custom MaterialUI Theming */
-  // const useStyles = makeStyles((theme) => ({
-  //   root: {
-  //     palette: {
-  //       teal: {
-  //         main: "#3d9a88",
-  //         contrastText: "#fff",
-  //       },
-  //     },
-  //   },
-  // }));
-
   const classes = makeStyles();
 
   /*** END - Material UI Config ***/

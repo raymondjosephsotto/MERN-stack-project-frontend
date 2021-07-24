@@ -7,7 +7,7 @@ import { AppBar } from "@material-ui/core";
 
 const MainHeader = (props) => {
   return (
-    <AppBar position="static">
+    <AppBar position="fixed" style={{ background: "#3d9a88" }}>
       {props.children}
     </AppBar>
   );
