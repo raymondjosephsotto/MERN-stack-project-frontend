@@ -1,6 +1,6 @@
 import React from "react";
 
-import { makeStyles, AppBar } from "@material-ui/core";
+import { AppBar } from "@material-ui/core";
 
 // import './MainHeader.css';
 
