@@ -32,7 +32,7 @@ const SideDrawer = (props) => {
       anchor="left"
       open={props.show}
       onClose={props.onClick}
-      // onClick={props.onClick}
+      onClick={props.onClick}
       className={clsx(classes.list)}
       classes={{
       	paper: clsx(classes.paper)
